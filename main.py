@@ -38,7 +38,7 @@ def getRouteETAURL(bus: Bus) -> str:
 
 
 def getHistoryFileName(bus: Bus) -> str:
-    return f"history/{bus.route}-{getFormattedCurrentTime()}"
+    return f"history/{bus.route}-{bus.service_type}-{getFormattedCurrentTime()}"
 
 
 def getFormattedCurrentTime() -> str:
